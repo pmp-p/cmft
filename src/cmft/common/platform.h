@@ -47,6 +47,7 @@
 #endif
 
 #if (0                      \
+    || defined (__aarch64__)\
     || defined (__amd64__)  \
     || defined (__amd64)    \
     || defined (__x86_64__) \
