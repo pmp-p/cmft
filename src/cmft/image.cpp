@@ -5172,7 +5172,7 @@ namespace cmft
 
         char fileName[CMFT_PATH_LEN];
         strcpy(fileName, _fileName);
-        cmft::strlcat(fileName, getFilenameExtensionStr(ImageFileType::DDS), CMFT_PATH_LEN);
+        //cmft::strlcat(fileName, getFilenameExtensionStr(ImageFileType::DDS), CMFT_PATH_LEN);
 
         // Open file.
         FILE* fp = fopen(fileName, "wb");
@@ -5244,7 +5244,7 @@ namespace cmft
     {
         char fileName[CMFT_PATH_LEN];
         strcpy(fileName, _fileName);
-        cmft::strlcat(fileName, getFilenameExtensionStr(ImageFileType::KTX), CMFT_PATH_LEN);
+        //cmft::strlcat(fileName, getFilenameExtensionStr(ImageFileType::KTX), CMFT_PATH_LEN);
 
         // Open file.
         FILE* fp = fopen(fileName, "wb");
@@ -5396,7 +5396,7 @@ namespace cmft
                 cmft::strlcat(mipName, mipHeightStr, CMFT_PATH_LEN);
             }
 
-            cmft::strlcat(mipName, getFilenameExtensionStr(ImageFileType::HDR), CMFT_PATH_LEN);
+            //cmft::strlcat(mipName, getFilenameExtensionStr(ImageFileType::HDR), CMFT_PATH_LEN);
 
             // Open file.
             FILE* fp = fopen(mipName, "wb");
@@ -5536,7 +5536,7 @@ namespace cmft
                     cmft::strlcat(mipName, mipHeightStr, CMFT_PATH_LEN);
                 }
 
-                cmft::strlcat(mipName, getFilenameExtensionStr(ImageFileType::TGA), CMFT_PATH_LEN);
+                //cmft::strlcat(mipName, getFilenameExtensionStr(ImageFileType::TGA), CMFT_PATH_LEN);
 
                 // Open file.
                 FILE* fp = fopen(mipName, "wb");
