@@ -191,6 +191,12 @@ namespace cmft
     #elif CMFT_PLATFORM_APPLE
     #   define fseeko64 fseeko
     #   define ftello64 ftello
+    #elif defined(_LARGEFILE64_SOURCE)
+        /* for glibc system that support LFS */
+    #else
+        /* others */
+    #   define fseeko64 fseeko
+    #   define ftello64 ftello
     #endif // CMFT_
 
     int64_t rwSeekFile(Rw* _rw, int64_t _offset = 0, Whence::Enum _whence = Whence::Current)
